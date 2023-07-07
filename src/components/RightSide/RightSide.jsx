@@ -7,6 +7,7 @@ import {UilSetting} from '@iconscout/react-unicons'
 import {UilBell} from '@iconscout/react-unicons'
 import {UilComment} from '@iconscout/react-unicons'
 import {UilHome} from '@iconscout/react-unicons'
+import TrendCard from '../TrendCard/TrendCard'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faGear } from '@fortawesome/free-solid-svg-icons'
 
