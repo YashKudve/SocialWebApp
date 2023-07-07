@@ -9,7 +9,7 @@ export const TrendData=[
     },
     {
         name:"Elon musk",
-        shares:11K,
+        shares:117,
     },
     {
         name:"ReactJS",
