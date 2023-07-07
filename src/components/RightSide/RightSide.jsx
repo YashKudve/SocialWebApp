@@ -16,18 +16,15 @@ const RightSide = () => {
   return (
     <div className='RightSide'>
       <div className="navIcons">
-        {/* <img src={Home} alt="" /> */}
         <UilHome/>
-        {/* <FontAwesomeIcon icon={faGear} /> */}
         <UilSetting />
         <UilBell/>
         <UilComment/>
-
-        {/* <img src={Noti} alt="" /> */}
-        {/* <img src={Comment } alt="" /> */}
       </div>
       
       <TrendCard/>
+
+      <button className='button r-button'>Share</button>
     </div>
   ) 
 }

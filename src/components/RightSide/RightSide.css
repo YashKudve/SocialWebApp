@@ -15,3 +15,10 @@
     height: 2rem;
     width: 2rem;
 }
+
+.r-button{
+    height: 2.5rem;
+    width: 80%;
+    align-self: center;
+
+}
