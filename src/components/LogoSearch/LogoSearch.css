@@ -1,7 +1,9 @@
 .LogoSearch{
-    display: flex;
-    /* flex-direction: row; */
-    gap: 0.5rem;
+    /* display: flex;
+    gap: 0.5rem; */
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
 }
 
 .Search{
