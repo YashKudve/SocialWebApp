@@ -1,23 +1,25 @@
 import { useDisclosure } from '@mantine/hooks';
 import { Modal, useMantineTheme } from '@mantine/core';
 
+
 function ProfileModal(modalOpened, setModalOpened) {
 //   const [opened, { open, close }] = useDisclosure(false);
   const theme = useMantineTheme();
-
+  
   return (
     <>
-      <Modal
-        // opened={opened}
+      <Modal className='modal'
+        opened={modalOpened}
+        size="50%"
+        centered
+        onClose={()=>setModalOpened(false)}
         // onClose={close}
-        title="Authentication"
         overlayProps={{
           color: theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[2],
           opacity: 0.55,
           blur: 3,
-          size: '55%',
-          opened: modalOpened,
-          onClose:()=>setModalOpened(false)
+          // opened: {modalOpened},
+          // onClose:()=>setModalOpened(false)
         }}
       >
        <form action="" className='infoForm'>
@@ -36,15 +38,17 @@ function ProfileModal(modalOpened, setModalOpened) {
         </div>
 
         <div>
-          <input type="text" name="" placeholder='Relationship Status'/>
+          <input type="text" className='infoInput' name="" placeholder='Relationship Status'/>
         </div>
 
         <div>
           Profile Image
-          <input type="file" name='profileImg' />
+          <input type="file" name='profileImg' /> 
           Cover Image
           <input type="file" name="coverImg" />
         </div>
+
+        <button className='button infoButton'>Update</button>
        </form>
       </Modal>
 
