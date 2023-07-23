@@ -3,7 +3,7 @@ import { Modal, useMantineTheme } from '@mantine/core';
 
 
 function ProfileModal(modalOpened, setModalOpened) {
-//   const [opened, { open, close }] = useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false);
   const theme = useMantineTheme();
   
   return (
@@ -18,6 +18,7 @@ function ProfileModal(modalOpened, setModalOpened) {
           color: theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[2],
           opacity: 0.55,
           blur: 3,
+          onclose: false
           // opened: {modalOpened},
           // onClose:()=>setModalOpened(false)
         }}
@@ -28,6 +29,10 @@ function ProfileModal(modalOpened, setModalOpened) {
         <div>
           <input type="text" className="infoInput" name='FirstName' placeholder='First Name'/>
           <input type="text" className="infoInput" name='LastName' placeholder='Last Name'/>
+        </div>
+
+        <div>
+
           <input type="text" className="infoInput" name='worksAt' placeholder='Works At'/>
         </div>
 
@@ -52,9 +57,7 @@ function ProfileModal(modalOpened, setModalOpened) {
        </form>
       </Modal>
 
-      {/* <Group position="center">
-        <Button onClick={open}>Open modal</Button>
-      </Group> */}
+      
     </>
   );
 }
